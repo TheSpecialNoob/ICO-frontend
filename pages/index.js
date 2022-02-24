@@ -247,16 +247,16 @@ export default function Home() {
       </Head>
       <div className={styles.main}>
         <div>
-          <h1 className={styles.title}>Crypto Devs ICO!</h1>
+          <h1 className={styles.title}>Welcome to Crypto Devs ICO!</h1>
           <div className={styles.description}>
-            Claim your Crypto Dev tokens
+            You can claim or mint Crypto Dev tokens here
           </div>
           {walletConnected ? (
             <div>
               <div className={styles.description}>
                 {/* Format Ether helps us in converting a BigNumber to string */}
-                 {utils.formatEther(balanceOfCryptoDevTokens)} Crypto
-                Dev Tokens minted
+                You have minted {utils.formatEther(balanceOfCryptoDevTokens)} Crypto
+                Dev Tokens
               </div>
               <div className={styles.description}>
                 {/* Format Ether helps us in converting a BigNumber to string */}
@@ -276,7 +276,7 @@ export default function Home() {
       </div>
 
       <footer className={styles.footer}>
-        Made with &#10084; by Axis
+        Made with &#10084; by Crypto Devs
       </footer>
     </div>
   );
